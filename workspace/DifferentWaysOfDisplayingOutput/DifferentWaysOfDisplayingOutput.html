@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Different ways to display information </h2>
+	<p id="code"></p>
+	<script>
+		document.getElementById("code").innerHTML= "Hello world ! This is from the setting of the innerHTML";
+	</script>
+	<p>Hello World! I am from the paragraph tag in the HTML page</p>
+	<script>
+		document.write("Hello World! I am from the first document.write()");
+	</script>
+	<br>
+	<br>
+
+	<!-- <button onlick="window.alert('Hello World! I am from Window alert')">
+	Click me to view window alert</button> -->
+
+	<button onclick="myFunction()">Click me to view window alert</button>
+
+	<script>
+	function myFunction() {
+  		alert("Hello World! I am from Window alert");
+		}
+	</script>
+	<br>
+	<br>
+
+	<button onclick="document.write('Hello World! I am from second document.write()')">Click me clear existing HTML</button>
+	<script>console.log("Hello World! This is the console message")</script>
+</body>
+</html>
